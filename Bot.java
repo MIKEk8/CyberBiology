@@ -927,7 +927,7 @@ public class Bot {
         int yt = yFromVektorR(bot, n);
 
         for (int i = 0; i < MIND_SIZE; i++) {  // копируем геном в нового бота
-            newbot.mind[i] = newbot.mind[i];
+            newbot.mind[i] = bot.mind[i];
         }
         if (Math.random() < 0.25) {     // в одном случае из четырех случайным образом меняем один случайный байт в геноме
             int ma = (int) (Math.random() * 64);  // 0..63
